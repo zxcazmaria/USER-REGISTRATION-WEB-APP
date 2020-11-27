@@ -1,13 +1,5 @@
 <?php
-$dbhost = 'localhost';
-$dbuser = 'root';
-$dbpwrd = '';
-$dbname = 'users';
-$conn = mysqli_connect($dbhost, $dbuser, $dbpwrd, $dbname) or die('Mysql Connection Failed....' . mysqli_error());
-if (!$conn)
-{
-die("Connection failed: " . mysqli_error());
-}
+include 'db.php';
 	
 $id = $_GET['id'];
 function getUserTable($id, $table)
