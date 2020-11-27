@@ -16,12 +16,12 @@ return $row[''.$table.''];
 <!DOCTYPE html>
 <html>
    <head>
+	 <title> Edit Registeration <?php echo getUserTable($id, "fname"); ?> <?php echo getUserTable($id, "lname"); ?> </title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="css\style.css">
    </head>
    <body>
-   <h2> Registeration Form-add User </h2>
-   <p> Use this form to register a new user in the system. </p>
+   <h2> Edit User: <?php echo getUserTable($id, "fname"); ?> <?php echo getUserTable($id, "lname"); ?>  </h2>
    <div class="container">
       <form action="editaction.php?id=<?php echo $id ?>" method="post">
 		
