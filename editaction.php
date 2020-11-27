@@ -19,7 +19,7 @@ if ($button == 'Edit!')
         die("Connection failed: " . mysqli_error());
     }
     mysqli_query($conn,"Update users Set fname='$fname',lname='$lname',accesslevel='$acesslevel',address='$address',password='$password' where id=$id");
-	header("location: /viewmodule.php");
+	header("location: /");
 }
 
 ?>
